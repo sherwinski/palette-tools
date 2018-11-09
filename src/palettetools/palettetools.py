@@ -14,7 +14,6 @@ def extract_colors_css(url):
 	resp.raise_for_status()
 	css_str = resp.text
 
-	#if(resp.text.find('.image-fg-1') != -1):
 	for word in CSS_STRINGS:
 		if(word not in css_str):
 			raise Exception('Invalid imgix-url used, did not return an expected value')
