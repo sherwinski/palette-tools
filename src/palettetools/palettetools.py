@@ -5,23 +5,38 @@ import ast
 from constants import *
 
 '''
-	Extract the color palette of the image from the imgix-url passed in
-	
+	Tools for extracting/analyzing the color palette of an image hosted through imgix
+	General usage: 
+
 '''
-def extract_colors(url, responseType):
-	resp = req.get(url + PALETTE_URL_PARAM + responseType)
-	return ast.literal_eval(resp.text)
-	
 def extract_colors_css(url):
 	resp = req.get(url + PALETTE_URL_PARAM + 'css')
-	return resp.text
+	resp.raise_for_status()
+	css_str = resp.text
+
+	#if(resp.text.find('.image-fg-1') != -1):
+	for word in CSS_STRINGS:
+		if(word not in css_str):
+			raise Exception('Invalid imgix-url used, did not return an expected value')
+			sys.exit(1)
+
+	return css_str
+
 
 def extract_colors_json(url):
 	resp = req.get(url + PALETTE_URL_PARAM + 'json')
-	return ast.literal_eval(resp.text)
+	resp.raise_for_status()
+
+	try:
+		json_obj = ast.literal_eval(resp.text)
+	except Exception as err:
+		raise Exception('Invalid imgix-url used, did not return an expected value')
+		sys.exit(1)
+
+	return json_obj
 
 def overlay_text_color(url):
-	resp = extract_colors(url, JSON_STRING)
+	resp = extract_colors_json(url)
 	luminance = resp['average_luminance']
 
 	if(luminance < .5):
