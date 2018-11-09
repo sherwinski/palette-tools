@@ -1,6 +1,7 @@
 
-from palettetools.cli import main
+import palettetools as pt
+from test_palettetools_constants import *
 
 
-def test_main():
-    assert main([]) == 0
+def test_color_black():
+    assert BLACK_HEX == '000'
