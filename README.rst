@@ -49,7 +49,8 @@ Overview
 
 .. end-badges
 
-Color palette tools for processing imgix-served images.
+A Python library for extracting and analyzing color palettes from images.
+All images must be served through Imgix, more information can be found at http://www.imgix.com.
 
 * Free software: BSD 2-Clause License
 
@@ -68,30 +69,16 @@ To use the project:
 
 .. code-block:: python
 
-    import palettetools
-    palettetools.longest()
+    import palettetools as pt
+    url = "https://assets.imgix.net/examples/bluehat.jpg"
 
+    print pt.extract_colors_css(url)
+    print pt.extract_colors_json(url)
+    print pt.overlaid_text_color(url)
 
-Development
+Testing
 ===========
 
 To run the all tests run::
 
     tox
-
-Note, to combine the coverage data from all the tox environments run:
-
-.. list-table::
-    :widths: 10 90
-    :stub-columns: 1
-
-    - - Windows
-      - ::
-
-            set PYTEST_ADDOPTS=--cov-append
-            tox
-
-    - - Other
-      - ::
-
-            PYTEST_ADDOPTS=--cov-append tox
