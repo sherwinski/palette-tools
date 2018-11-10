@@ -6,9 +6,11 @@ python:
 - 3.6
 
 matrix:
-  allow_failures:
-    - python: 2.7
-    - python: 3.6
+include:
+  - name: "2.7 Unit Test"
+    python: "2.7"
+  - name: "3.6 Unit Test"
+    python: "3.6"
 
 install:
 - pip install tox
