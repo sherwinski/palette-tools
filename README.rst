@@ -3,7 +3,7 @@ Overview
 ========
 
 
-.. |travis| image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
+.. |travis| image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=travis-ci
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/sherwinski/palette-tools
 
