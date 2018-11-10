@@ -2,7 +2,6 @@
 Overview
 ========
 
-.. start-badges
 
 .. |travis| image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
     :alt: Travis-CI Build Status
@@ -12,7 +11,6 @@ Overview
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/palettetools
 
-.. end-badges
 
 A Python library for extracting and analyzing color palettes from images.
 All images must be served through Imgix, more information can be found at http://www.imgix.com.
