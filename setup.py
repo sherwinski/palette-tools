@@ -53,6 +53,9 @@ setup(
     keywords=[
         'image', 'processing', 'color', 'palette', 'tools', 'imgix'
     ],
+    install_requires=[
+        'requests'
+    ],
     tests_require=[
         'pytest'
     ],

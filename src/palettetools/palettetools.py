@@ -2,7 +2,7 @@
 
 import requests as req
 import ast
-from constants import *
+from .constants import *
 
 '''
 	Tools for extracting/analyzing the color palette of an image hosted through imgix
@@ -44,3 +44,6 @@ def overlay_text_color(url):
 		color = BLACK_HEX
 
 	return color
+
+
+__all__ = [ 'extract_colors_css', 'extract_colors_json', 'overlay_text_color' ]
