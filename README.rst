@@ -83,6 +83,7 @@ This can be appended to a pre-existing CSS file through the following script:
 Color palettes can also be extracted as a JSON object through the following function. Also note that the object has 3 keys: **colors** , **average_luminance** , and **dominant_colors**
 
 .. code-block:: python
+
     import palettetools as pt
     url = "https://assets.imgix.net/examples/bluehat.jpg"
 
@@ -178,6 +179,7 @@ Extracting Color Palettes
 PaletteTools can also give a suggested color for overlaid text on a specific image. The function will either return the hexadecimal value for **white** or **black** depending on which is more visible for the passed in image: 
 
 .. code-block:: python
+
     import palettetools as pt
     url = "https://assets.imgix.net/examples/bluehat.jpg"
 
