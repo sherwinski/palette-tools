@@ -2,12 +2,15 @@
 Overview
 ========
 
+[![Build Status](https://travis-ci.org/sherwinski/palette-tools.svg?branch=master)](https://travis-ci.org/sherwinski/palette-tools)
 
-.. |travis| image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
+[![Version](https://img.shields.io/pypi/v/palettetools.svg)](https://pypi.python.org/pypi/palettetools)
+
+|travis| image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/sherwinski/palette-tools
 
-.. |version| image:: https://img.shields.io/pypi/v/palettetools.svg
+|version| image:: https://img.shields.io/pypi/v/palettetools.svg
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/palettetools
 
