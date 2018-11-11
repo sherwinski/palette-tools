@@ -25,10 +25,10 @@ def read(*names, **kwargs):
 
 setup(
     name='palettetools',
-    version='0.1.0',
+    version='0.8.0',
     license='BSD 2-Clause License',
     description='Color palette tools for processing imgix-served images.',
-    long_description='%s\n%s' % (
+    long_description= '%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),

@@ -1,8 +1,12 @@
+.. start-badges
+
 .. image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
     :target: https://travis-ci.org/sherwinski/palette-tools
 
 .. image:: https://img.shields.io/pypi/v/palettetools.svg
     :target: https://pypi.python.org/pypi/palettetools
+
+.. end-badges
 
 ========
 Overview
@@ -77,7 +81,8 @@ This can be appended to a pre-existing CSS file through the following script:
     >>> file.write(css)
     >>> file.close()
 
-Color palettes can also be extracted as a JSON object through the following function. Also note that the object has 3 keys: **colors** , **average_luminance** , and **dominant_colors**
+Color palettes can also be extracted as a JSON object through the following function. 
+Also note that the object has 3 keys: **colors** , **average_luminance** , and **dominant_colors**
 
 .. code-block:: python
 
@@ -173,7 +178,8 @@ Color palettes can also be extracted as a JSON object through the following func
 Overlaid Text Color
 =============
 
-PaletteTools can also give a suggested color for overlaid text on a specific image. The function will either return the hexadecimal value for **white** or **black** depending on which is more visible for the passed in image: 
+PaletteTools can also give a suggested color for overlaid text on a specific image. 
+The function will either return the hexadecimal value for **white** or **black** depending on which is more visible for the passed in image:
 
 .. code-block:: python
 
