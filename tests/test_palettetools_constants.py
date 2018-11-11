@@ -1,9 +1,9 @@
-CSS_STRING = 'css'
-JSON_STRING = 'json'
 BLACK_HEX = '000'
 WHITE_HEX = 'fff'
 IMG_BLUEHAT = "https://assets.imgix.net/examples/bluehat.jpg"
 IMG_PINE = "https://sherwinski.imgix.net/pineneedles.jpg"
+BROKEN_URL = "https://assets.imgix.net/examples/invalid"
+INVALID_URL = "https://google.com"
 
 CSS_BLUEHAT = """.image-fg-1 { color:#0d0c10 !important; } .image-bg-1 { background-color:#0d0c10 !important; } .image-fg-2 { color:#015091 !important; } .image-bg-2 { background-color:#015091 !important; } .image-fg-3 { color:#0870d3 !important; } .image-bg-3 { background-color:#0870d3 !important; } .image-fg-4 { color:#239be0 !important; } .image-bg-4 { background-color:#239be0 !important; } .image-fg-5 { color:#b1dfeb !important; } .image-bg-5 { background-color:#b1dfeb !important; } .image-fg-6 { color:#f0c9b4 !important; } .image-bg-6 { background-color:#f0c9b4 !important; } .image-fg-ex-1 { color:#000000 !important; } .image-bg-ex-1 { background-color:#000000 !important; } .image-fg-ex-2 { color:#ffffff !important; } .image-bg-ex-2 { background-color:#ffffff !important; } .image-fg-vibrant { color:#0d95e4 !important; } .image-bg-vibrant { background-color:#0d95e4 !important; } .image-fg-muted-dark { color:#38445c !important; } .image-bg-muted-dark { background-color:#38445c !important; } .image-fg-muted { color:#966760 !important; } .image-bg-muted { background-color:#966760 !important; } .image-fg-vibrant-light { color:#72c5f4 !important; } .image-bg-vibrant-light { background-color:#72c5f4 !important; } .image-fg-muted-light { color:#d8b6aa !important; } .image-bg-muted-light { background-color:#d8b6aa !important; } .image-fg-vibrant-dark { color:#015091 !important; } .image-bg-vibrant-dark { background-color:#015091 !important; }"""
 
