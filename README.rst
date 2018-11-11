@@ -1,18 +1,12 @@
+.. image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
+    :target: https://travis-ci.org/sherwinski/palette-tools
+
+.. image:: https://img.shields.io/pypi/v/palettetools.svg
+    :target: https://pypi.python.org/pypi/palettetools
+
 ========
 Overview
 ========
-
-[![Build Status](https://travis-ci.org/sherwinski/palette-tools.svg?branch=master)](https://travis-ci.org/sherwinski/palette-tools)
-
-[![Version](https://img.shields.io/pypi/v/palettetools.svg)](https://pypi.python.org/pypi/palettetools)
-
-|travis| image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
-    :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/sherwinski/palette-tools
-
-|version| image:: https://img.shields.io/pypi/v/palettetools.svg
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/palettetools
 
 
 A Python library for extracting and analyzing color palettes from images.
@@ -40,7 +34,7 @@ The first of these two functions will return a string in the format of a text/cs
     url = "https://assets.imgix.net/examples/bluehat.jpg"
 
     css_palette = pt.extract_colors_css(url)
-    
+  
     # Will return the following:
     #
     #.image-fg-1 { color:#0d0c10 !important; }
