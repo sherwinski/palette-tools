@@ -173,7 +173,7 @@ Color palettes can also be extracted as a JSON object through the following func
     # }
   
 
-Extracting Color Palettes
+Overlaid Text Color
 =============
 
 PaletteTools can also give a suggested color for overlaid text on a specific image. The function will either return the hexadecimal value for **white** or **black** depending on which is more visible for the passed in image: 
@@ -183,7 +183,7 @@ PaletteTools can also give a suggested color for overlaid text on a specific ima
     import palettetools as pt
     url = "https://assets.imgix.net/examples/bluehat.jpg"
 
-    color_suggested = pt.overlaid_text_color(url)
+    color_suggested = pt.overlay_text_color(url)
 
     print color_suggested
     
