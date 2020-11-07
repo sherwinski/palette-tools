@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsherwinski%2Fpalette-tools.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsherwinski%2Fpalette-tools?ref=badge_shield)
+
 .. start-badges
 
 .. image:: https://travis-ci.org/sherwinski/palette-tools.svg?branch=master
@@ -200,3 +202,7 @@ Testing
 To run the all tests run::
 
     tox
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsherwinski%2Fpalette-tools.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsherwinski%2Fpalette-tools?ref=badge_large)
